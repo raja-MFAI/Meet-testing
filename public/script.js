@@ -2,7 +2,7 @@ const socket = io('/');
 const videoGrid = document.getElementById('video-grid');
 const myPeer = new Peer(undefined, {
   host: 'https://peer-testing.onrender.com', // Replace with your Peer server domain
-  path: '/myapp', // Path you used in the PeerJS server
+  path: '/peerjs', // Path you used in the PeerJS server
   secure: true,  // Enable this if using HTTPS
   port: 443      // Use 443 for HTTPS, 80 for HTTP, or the port used by your Peer server
 });
