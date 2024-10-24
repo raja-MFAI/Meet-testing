@@ -8,7 +8,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.redirect(`/test-room`); // All users will join the same "test-room"
+  res.redirect(`/${uuidV4()}`); // All users will join the same "test-room"
 });
 
 
